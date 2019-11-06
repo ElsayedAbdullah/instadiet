@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Instadiet.me</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/favicon.png" type="image/png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/Chart.min.css">
+    <!-- custom style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Start Header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="d-none d-md-block"
+              src="imgs/Instadiet-Logo.svg"
+              alt="Instadiet-Logo"
+            />
+            <img
+              class="d-md-none"
+              src="imgs/Instadiet-logo-m.svg"
+              alt="Instadiet-Logo"
+            />
+          </a>
+
+          <button
+            class="the-button"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="the-line"></span>
+            <span class="the-line"></span>
+            <span class="the-line"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="search-result-rtl.html"
+                  >ENG / <span class="arabic">عربى</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="food-database.html">Food database</a>
+              </li>
+              <li class="nav-item dropdown-s">
+                <a class="nav-link" href="blog.html">Blog</a>
+                <!-- <div class="dropdown-menu-s">
+                  <a class="dropdown-item-s" href="single.html">Single-post</a>
+                </div> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sign-in" href="#!">Sign In</a>
+              </li>
+            </ul>
+          </div>
+          <a class="start-diet d-none d-lg-inline-block" href="#!"
+            >Start your diet</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- End Header-->
+
+    <!-- start your diet show in mobile -->
+    <div class="call-to-action">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="d-none d-md-block"
+            src="imgs/Instadiet-Logo.svg"
+            alt="Instadiet-Logo"
+          />
+          <img
+            class="d-md-none"
+            src="imgs/Instadiet-logo-m.svg"
+            alt="Instadiet-Logo"
+          />
+        </a>
+        <a class="start-diet" href="#!">Start your diet</a>
+      </div>
+    </div>
+
+    <!-- Start Showcase-->
+    <section class="showcase-database search-result">
+      <div class="container">
+        <div class="showcase-content">
+          <p class="showcase-desc">Search results for</p>
+          <h1 class="showcase-title">Banana</h1>
+          <div class="search-box">
+            <form>
+              <input
+                type="search"
+                class="input-search"
+                placeholder="e.g. Banana, raw"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Fruits</a></li>
+              <li class="breadcrumb-item">Banana</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Showcase-->
+
+    <!-- Start search-info -->
+    <section class="search-info">
+      <div class="container">
+        <div class="search-info-content">
+          
+          <div class="row">
+            <div class="col-md-2">
+              <div class="quantity">
+                <label> Quantity:
+                  <input type="number" min="1" max="10" class="number" value="1" />
+                  <span class="inc button">+</span>
+                  <span class="dec button">-</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-10 no-padd">
+              <div class="choose">
+                <p>Choose one of the measure options below:</p>
+                <div class="choose-content">
+                  <div class="content">
+                    <label>
+                      <input type="radio" name="diet" class="radio-diet" checked />
+                      <span>Banana, raw</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Roasted/Baked</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Sautéed</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Banana, raw</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Banana, raw</span>
+                    </label>
+                    <label class="label-hidden hide">
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Banana, raw</span>
+                    </label>
+                    <label class="label-hidden hide">
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Roasted/Baked</span>
+                    </label>
+                    <label class="label-hidden hide">
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Sautéed</span>
+                    </label>
+                    <label class="label-hidden hide">
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Banana, raw</span>
+                    </label>
+                    <label class="label-hidden hide">
+                      <input type="radio" name="diet" class="radio-diet" />
+                      <span>Banana, raw</span>
+                    </label>
+                    <button class="view-more">Show 5+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        </div>
+      </div>
+    </section>
+    <!-- End search-info -->
+
+    <!-- Start nutrients -->
+    <section class="nutrients">
+      <div class="container">
+        <div class="nutrients-content">
+          <div class="row">
+          <div class="col-md-4 col-lg-3 d-none d-md-block">
+            <div class="nutrient">
+              <img class="protein" src="imgs/protein.png" alt="">
+              <div class="nutrient-info">
+                <h3 class="nutrient-name">Protein</h3>
+                <p>1.089 g <span class="percent prot">(30%)</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 d-none d-md-block">
+            <div class="nutrient">
+              <img class="fats" src="imgs/fat.png" alt="">
+              <div class="nutrient-info">
+                <h3 class="nutrient-name">Fat</h3>
+                <p>0.33 g <span class="percent fat">(20%)</span></p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 d-none d-md-block">
+            <div class="nutrient">
+              <img class="carbs" src="imgs/carbs.png" alt="">
+              <div class="nutrient-info">
+                <h3 class="nutrient-name">Carbs</h3>
+              <p>22.82 g <span class="percent carb">(50%)</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 text-center text-md-right">
+            <div class="chart">
+              <!-- <canvas id="doughnut-chart" width="250" height="160"></canvas>
+              <div class="donut-inner">
+                20
+                <span>Kcal</span> 
+              </div> -->
+              <div class="bie-chart">
+                20
+                <span>Kcal</span> 
+              </div>
+              <div class="chart-info d-block d-md-none">
+                <h3>Protein <span><span class="quantity"> 1.089 g</span></span> <span class="percent"> (30%)</span></h3>
+                <h3>Fats <span><span class="quantity"> 0.33 g</span></span> <span class="percent fat"> (20%)</span></h3>
+                <h3>Carbs <span><span class="quantity"> 1.089 g</span></span> <span class="percent carb"> (50%)</span></h3>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End nutrients -->
+
+    <!-- Start Micronutrients -->
+    <section class="micronutrients">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-xl-8">
+            <div class="micronutrients-content">
+              <div class="table-content">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Micro-Nutrient</th>
+                      <th scope="col" class="d-none d-lg-table-cell">Amount</th>
+                      <th scope="col" class="d-none d-lg-table-cell">Unit</th>
+                      <th scope="col" class="d-table-cell d-lg-none">Amount/Unit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Vitamin B6</th>
+                      <td class="d-none d-lg-table-cell">0.367</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.367 mg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Vitamin C, total ascorbic acid</th>
+                      <td class="d-none d-lg-table-cell">8.7</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">8.7 mg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Thiamin</th>
+                      <td class="d-none d-lg-table-cell">0.031</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.031 mg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Riboflavin</th>
+                      <td class="d-none d-lg-table-cell">0.073</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.073 mg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Niacin</th>
+                      <td class="d-none d-lg-table-cell">0.665</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.665 mg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Folate, total</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Folic acid</th>
+                      <td class="d-none d-lg-table-cell">0</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">0 µg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Folate, DFE</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Folate, food</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Choline, total</th>
+                      <td class="d-none d-lg-table-cell">9.8</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">9.8 µg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Vitamin B6</th>
+                      <td class="d-none d-lg-table-cell">0.367</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.367 mg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Vitamin C, total ascorbic acid</th>
+                      <td class="d-none d-lg-table-cell">8.7</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">8.7 mg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Thiamin</th>
+                      <td class="d-none d-lg-table-cell">0.031</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.031 mg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Riboflavin</th>
+                      <td class="d-none d-lg-table-cell">0.073</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.073 mg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Niacin</th>
+                      <td class="d-none d-lg-table-cell">0.665</td>
+                      <td class="d-none d-lg-table-cell">mg</td>
+                      <td class="d-table-cell d-lg-none">0.665 mg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Folate, total</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Folic acid</th>
+                      <td class="d-none d-lg-table-cell">0</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">0 µg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Folate, DFE</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Folate, food</th>
+                      <td class="d-none d-lg-table-cell">20</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">20 µg</td>
+                    </tr>
+                    <tr class="hide row-hidden">
+                      <th scope="row">Choline, total</th>
+                      <td class="d-none d-lg-table-cell">9.8</td>
+                      <td class="d-none d-lg-table-cell">µg</td>
+                      <td class="d-table-cell d-lg-none">9.8 µg</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="show-more">
+                <button>
+                View 10 More <i class="fa fa-arrow-down"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-4">
+            <div class="activities">
+              <h3 class="activities-title">Activities Needed to burn <span>20 Kcal</span></h3>
+              <ul>
+                <li>
+                  <img src="imgs/walking.png" alt="">
+                  <h2>30 mins</h2>
+                  <span>of Walking</span>
+                </li>
+                <li>
+                  <img src="imgs/running.png" alt="">
+                  <h2>3 mins</h2>
+                  <span>of Running</span>
+                </li>
+                <li>
+                  <img src="imgs/cycling.png" alt="">
+                  <h2>5 mins</h2>
+                  <span>of Cycling</span>
+                </li>
+                <li>
+                  <img src="imgs/cleaning.png" alt="">
+                  <h2>10 mins</h2>
+                  <span>of Cleaning</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Micronutrients -->
+
+    <!-- Start Facts -->
+    <section class="facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="fact">
+              <img src="imgs/info.png" alt="">
+              <h3>Cras mollis sit amet nisl et blandit</h3>
+              <p>Suspendisse dictum ultricies suscipit. Phasellus efficitur fermentum enim, eu varius metus mollis in. Sed sitadend amet tempor nisl, nec efficitur nibh <span class="more hide">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span> 
+                <button class="read-more">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="fact">
+              <img src="imgs/info.png" alt="">
+              <h3>Aenean non elit non dolor convallis mollis</h3>
+              <p>Cras mollis sit amet nisl et blandit. In consequat ante non erat varius, vestibulum sodales nisi suscipit. Aenean non tellus a risus egestas tempus <span class="more hide">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                <button class="read-more">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Facts -->
+
+    <!-- Start Newsletter -->
+    <section id="newsletter" class="newsletter-search">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="heading">Latest & Greatest!</h2>
+            <p>
+              Sign up to our newsletter to get the latest and the greatest
+              updates
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <form>
+              <input
+                type="email"
+                name="mail"
+                placeholder="Enter your Email Address"
+              />
+              <button class="primary-btn" type="submit">
+                Subscribe
+                <img src="imgs/arrow-right.svg" alt="arrow">
+              </button>
+            </form>
+            <div class="private-data">
+              <p><i class="fa fa-lock"></i> Your data is 100% private</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Newsletter -->
+
+    <!-- Start Footer -->
+    <footer id="main-footer" class="footer-database">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6 ">
+            <ul class="policy">
+              <li><a href="#">Become a dietitian</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6">
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">contact Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul class="contact">
+              <li>
+                <img src="imgs/newsletter.svg" alt="newsletter icon" />
+                <a href="mailto:info@instadiet.me?subject=Business%20Inquiry"
+                  >info@instadiet.me</a
+                >
+              </li>
+              <li>
+                <img src="imgs/phone-call.svg" alt="phone-call icon" />
+                <a href="tel:+201000334452">+201000334452</a>
+              </li>
+              <li class="location">
+                <img src="imgs/square-pin.svg" alt="square-pin icon" />
+                <p>
+                  AUC VLab - AUC Avenue - P.O. Box 74 - New Cairo 11835 - Egypt
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="newsletter">
+              <p>Sign up for our newsletter</p>
+              <form>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address..."
+                />
+                <button type="submit">Sign Up</button>
+              </form>
+              <div class="social-icons list-inline">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/instadiet.me"
+                    target="_blank"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/instadiet.me/"
+                    target="_blank"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.youtube.com/channel/UCkT30uls5-SiLkT-lkM9vZg"
+                    target="_blank"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="index.html"
+                ><img src="imgs/logo-small.svg" alt="Logo"
+              /></a>
+            </div>
+            <div class="col-md-6">
+              <p>Copyrights &copy; instadiet 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Scroll-To-Top -->
+    <div class="scroll-top">
+      <img src="imgs/triangle.svg" alt="triangle icon" />
+      <p>Top</p>
+    </div>
+    <!-- End Scroll-To-Top -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper.js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

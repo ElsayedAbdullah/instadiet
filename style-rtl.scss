@@ -1,0 +1,894 @@
+$primaryColor: #ef5fa2;
+$secondaryColor: #2a338f;
+$floatLeft: right;
+$floatRight: left;
+$textRight: left;
+$textLeft: right;
+$desktop: "(max-width: 1366px)";
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 992px)";
+$maxTab: "(max-width: 992px)";
+$betweentabdesk: "(min-width: 1000px) and (max-width: 1200px)";
+$mobileWidth: "(min-width: 640px) and (max-width: 840px)";
+$iphone6_7: "(min-width: 650px) and (max-width: 750px)";
+
+@import "rem-sass";
+
+body {
+  text-align: right;
+  font-family: "DinNext";
+}
+
+.primary-btn {
+  padding: rem(22px 40px 22px 60px);
+
+  @media #{$desktop} {
+    padding: rem(15px 35px 15px 50px);
+  }
+
+  &:hover {
+    background-color: darken($primaryColor, 5);
+
+    img {
+      left: 25px;
+      right: auto;
+    }
+  }
+
+  img {
+    right: auto;
+    left: 30px;
+    top: 40%;
+    transform: rotate(180deg);
+  }
+}
+
+/* Start Header */
+header {
+  .navbar-nav {
+    .nav-item {
+      &.dropdown-s {
+        .dropdown-menu-s {
+          left: auto;
+          right: 0;
+          text-align: center;
+        }
+      }
+      .nav-link {
+        @media #{$mobile} {
+          padding-left: auto !important;
+          padding-right: 5px !important;
+        }
+        &.sign-in {
+          padding-left: 1.4rem;
+          padding-right: 2rem;
+
+          @media #{$mobile} {
+            padding-left: auto !important;
+            padding-right: 25px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .start-diet {
+    background-color: $primaryColor;
+    border-radius: 3px;
+    padding: rem(10px 24px);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+
+    @media #{$mobile} {
+      order: 3;
+    }
+
+    &:hover {
+      background-color: darken($primaryColor, 5);
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: $primaryColor;
+  }
+}
+
+.call-to-action {
+  @media #{$mobile} {
+    .start-diet {
+      float: none !important;
+    }
+  }
+
+  .navbar-brand {
+    float: $floatLeft;
+  }
+
+  .start-diet {
+    float: $floatRight;
+  }
+}
+
+/* Start showcase */
+.showcase {
+  &:after {
+    transform: scaleX(-1);
+  }
+
+  .showcase-content {
+    .showcase-title {
+      font-size: 4rem;
+
+      @media #{$mobile} {
+        font-size: 28px;
+      }
+    }
+
+    .showcase-desc {
+      @media #{$mobile} {
+        width: 90%;
+      }
+    }
+
+    .showcase-list li {
+      @media #{$mobile} {
+        padding-right: 20px;
+      }
+
+      i {
+        margin-right: 0;
+        margin-left: 6px;
+      }
+
+      @media #{$mobile} {
+        text-align: $textLeft;
+      }
+    }
+
+    .showcase-btn {
+      @media #{$iphone6_7} {
+        text-align: $textLeft;
+      }
+    }
+  }
+}
+
+/* End showcase */
+
+/* Start empathy pink */
+.empathy,
+.empathy-blue {
+  .empathy-btn {
+    text-align: $textRight;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+}
+
+/* End empathy pink */
+
+/* Start Cards */
+.cards {
+  .card-item {
+    .icon {
+      margin-left: rem(15px);
+      margin-right: 0;
+
+      @media #{$mobile} {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+/* End Cards */
+
+/* Start tailored Plan */
+.tailored-plan {
+  .left-content {
+    a {
+      padding: rem(22px 40px 22px 60px);
+
+      @media #{$mobile} {
+        padding: 12px 30px 12px 55px;
+      }
+
+      i {
+        left: 30px;
+        right: auto;
+      }
+
+      &:hover {
+        i {
+          left: 25px;
+        }
+      }
+    }
+  }
+
+  .right-content {
+    .diet-plan {
+      .diet-plan-header {
+        h3 {
+          margin-left: 0;
+          margin-right: 5px;
+        }
+
+        .arrows {
+          position: absolute;
+          top: 0;
+          right: auto;
+          left: 80px;
+
+          @media #{$mobile} {
+            right: auto;
+            left: 10px;
+            top: -10px;
+            transform: scale(0.75);
+          }
+
+          @media #{$tablet} {
+            right: auto;
+            left: 180px;
+          }
+        }
+      }
+
+      .diet-slider {
+        .diet {
+          &.active {
+            @media #{$mobile} {
+              transform: scale(0.8) translate(0) !important;
+              z-index: 10 !important;
+            }
+          }
+
+          &.one {
+            @media #{$mobile} {
+              transform: scale(0.8) translate(0);
+            }
+          }
+
+          &.two {
+            transform: scale(0.9) translate(-70px);
+
+            @media #{$mobile} {
+              transform: scale(0.7) translate(-45px);
+            }
+          }
+
+          &.three {
+            transform: scale(0.8) translate(-145px);
+
+            @media #{$mobile} {
+              transform: scale(0.6) translate(-100px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End tailored Plan */
+
+/* Start Keep Tracking */
+.keep-tracking {
+  .keep-tracking-content {
+    img {
+      @media #{$mobile} {
+        margin-left: 0;
+        margin-right: -15px;
+      }
+    }
+  }
+
+  .keep-tracking-img {
+    .iphone {
+      @media #{$mobile} {
+        left: 65.5%;
+      }
+
+      @media #{$tablet} {
+        left: 0;
+        right: 30px;
+      }
+    }
+  }
+}
+
+/* End Keep Tracking */
+
+/* Start on The Medi */
+.on-the-media {
+  p {
+    text-align: $textLeft;
+  }
+}
+
+/* End on The Medi */
+
+/* Start prices */
+.prices {
+  .price-plan {
+    .features {
+      padding-left: 0;
+      padding-right: 30px;
+
+      li {
+        text-align: $textLeft;
+
+        i {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* End prices */
+
+/* Start Ideal Body Weight */
+.body-weight {
+  .triangle {
+    transform: translate(-50%, -50%) rotate(180deg);
+
+    @media #{$maxTab} {
+      transform: translatex(40%) rotate(90deg);
+      left: auto;
+      right: 50%;
+    }
+  }
+
+  .instadiet-analysis {
+    .front {
+      h3 {
+        img {
+          margin: 16px 32px 16px 8px;
+        }
+      }
+
+      .bmi {
+        .bmi-bar {
+          span {
+            float: $floatLeft;
+          }
+
+          .one {
+            border-radius: 0 5px 5px 0;
+          }
+
+          .five {
+            border-radius: 5px 0 0 5px;
+          }
+        }
+
+        .indicator {
+          right: auto;
+          left: 20%;
+
+          &:before {
+            right: auto;
+            left: 60%;
+          }
+
+          &:after {
+            right: auto;
+            left: 36%;
+            text-align: $textRight;
+            background-position: 40px center;
+          }
+        }
+      }
+
+      .tips {
+        padding-left: 0;
+        padding-right: 50px;
+
+        ul {
+          li {
+            padding-left: 0;
+            padding-right: 23px;
+
+            &:before {
+              left: auto;
+              right: 0;
+            }
+
+            img {
+              margin-right: 0;
+              margin-left: 6px;
+            }
+          }
+        }
+
+        .tips-btn {
+          #convertToForm {
+            @media #{$mobile} {
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Ideal Body Weight */
+
+/* Start FAQ */
+#faq {
+  .faq-left-side,
+  .faq-right-side {
+    li {
+      h3 {
+        padding-left: 0;
+        padding-right: rem(24px);
+
+        &:before {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* End FAQ */
+
+/* Start Footer */
+#main-footer {
+  @media #{$mobile} {
+    text-align: $textLeft;
+  }
+
+  .contact {
+    li {
+      &:nth-child(1) {
+        img {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          right: 0;
+          left: 5px;
+        }
+
+        a {
+          margin-right: 0px;
+        }
+      }
+
+      &.location {
+        img {
+          float: $floatLeft;
+          margin-right: 0;
+          margin-left: 15px;
+
+          @media #{$mobile} {
+            padding-top: 10px;
+          }
+        }
+
+        p {
+          float: $floatLeft;
+
+          @media #{$mobile} {
+            text-align: $textLeft;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    padding-left: 0;
+    padding-right: rem(24px);
+
+    @media #{$betweentabdesk} {
+      padding-right: rem(10px);
+    }
+
+    button[type="submit"] {
+      float: $floatRight;
+    }
+  }
+
+  .social-icons {
+    li {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-left: rem(15px);
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      text-align: $textRight;
+
+      @media #{$mobile} {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* End Footer */
+
+.scroll-top {
+  @media #{$maxTab} {
+    left: auto;
+    right: 50%;
+    bottom: 105px;
+    transform: translateX(50%);
+    position: absolute;
+  }
+
+  @media #{$tablet} {
+    bottom: 70px;
+  }
+}
+
+// blog post
+.posts .card .card-metabox i {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+// single post page
+.single-post .post-body .post-list {
+  padding-right: 40px;
+  padding-left: 0;
+  direction: rtl;
+}
+
+.single-post .post-body .first-letter::first-letter {
+  font-size: 16px;
+  color: #787878;
+}
+
+.single-post .post-body blockquote p {
+  border-left: 0;
+  border-right: 2px solid #1f1f1f;
+}
+
+.single-post .post-tags a {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .offset-md-1 {
+    margin-right: 8.333333%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .offset-lg-2 {
+    margin-right: 16.666667%;
+    margin-left: 0;
+  }
+}
+
+// Start Food database page
+/* Start Showcase */
+.showcase-database {
+  .showcase-content {
+    .search-box {
+      form {
+        button {
+          right: auto;
+          left: 0;
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+  }
+}
+/* End Showcase */
+#contact-us {
+  .contact-us-widget {
+    h3 {
+      padding-left: 0;
+      padding-right: rem(55px);
+
+      @media #{$mobile} {
+        padding-left: 0;
+        padding-right: rem(30px);
+      }
+    }
+
+    ul {
+      li {
+        padding: 30px 60px 30px 0;
+
+        &:before {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+  .contact-us-form {
+    padding-left: 0;
+    padding-right: 30px;
+
+    @media #{$mobile} {
+      padding-right: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding-left: 0;
+      padding-right: rem(16px);
+    }
+
+    button[type="submit"] {
+      float: $floatRight;
+      padding: 17px 40px 17px 60px;
+
+      @media #{$mobile} {
+        float: none;
+        &:hover {
+          img {
+            left: 115px;
+            right: auto;
+          }
+        }
+        img {
+          left: 120px;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+/* Start Newsletter */
+#newsletter {
+  form {
+    button[type="submit"] {
+      padding: 17px 40px 17px 60px;
+      @media #{$mobile} {
+        img {
+          left: 105px;
+          right: auto;
+        }
+        &:hover {
+          img {
+            left: 100px;
+            right: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .private-data {
+    text-align: $textRight;
+    @media #{$mobile} {
+      text-align: center;
+    }
+    p {
+      margin-left: 0;
+      margin-right: rem(8px);
+    }
+  }
+}
+
+/* End Newsletter */
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f104";
+  font-family: fontawesome;
+  padding-left: 0.5rem;
+}
+
+/* start search-info */
+.search-info {
+  .search-info-content {
+    .quantity {
+      label {
+        .button {
+          right: 0;
+          line-height: 19px;
+          @media #{$mobile} {
+            line-height: 30px;
+          }
+          &.inc {
+            @media #{$mobile} {
+              right: 0;
+            }
+          }
+          &.dec {
+            @media #{$mobile} {
+              left: 0;
+              right: auto;
+            }
+          }
+        }
+      }
+    }
+    .number {
+      margin-right: 25px;
+      @media #{$mobile} {
+        margin-right: 36px;
+        margin-left: 0;
+      }
+    }
+    .choose {
+      label {
+        span {
+          margin-right: 0;
+          margin-left: 5px;
+          padding: 13px 30px 13px 20px;
+          @media #{$betweentabdesk} {
+            padding: 13px 25px 13px 15px;
+          }
+          &:before {
+            left: auto;
+            right: 10px;
+            @media #{$betweentabdesk} {
+              left: 0;
+              right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$mobile} {
+    .container {
+      .search-info-content {
+        .no-padd {
+          padding-left: 0;
+          padding-right: 15px;
+        }
+      }
+      .choose {
+        &-content {
+          overflow-x: auto;
+          .content {
+            label {
+              span {
+                padding: 6px 26px 5px 15px;
+                &:before {
+                  padding-top: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Start nutrients */
+.nutrients {
+  .nutrients-content {
+    @media #{$betweentabdesk} {
+      padding: 0 30px 0 100px;
+    }
+    .nutrient {
+      padding-left: 0;
+      padding-right: 85px;
+      img {
+        left: auto;
+        right: 0;
+      }
+    }
+    .chart {
+      border-left: 0;
+      border-right: 1px solid #e3e4e8;
+      @media #{$maxTab} {
+        border-right: 0;
+      }
+
+      // .donut-inner {
+      //   margin-right: 60px;
+      //   @media #{$betweentabdesk} {
+      //     margin-left: 0;
+      //     margin-right: 100px;
+      //   }
+      // }
+      .bie-chart {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+  @media #{$mobile} {
+    .chart-info {
+      h3 {
+        &:before {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+/* End nutrients */
+
+/* Start Micronutrients */
+.micronutrients {
+  .activities {
+    ul {
+      padding-left: 60px;
+      padding-right: 60px;
+      @media #{$tablet} {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      li {
+        padding-left: 0;
+        padding-right: 100px;
+        &:before {
+          content: "أو";
+          transform: translateX(50%);
+          left: auto;
+          right: 50%;
+        }
+        img {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+/* End Micronutrients */
+
+/* Start Facts */
+.facts {
+  .fact {
+    padding-left: 65px;
+    padding-right: 100px;
+    @media #{$betweentabdesk} {
+      padding-left: 65px;
+      padding-right: 80px;
+    }
+    @media #{$tablet} {
+      padding-right: 60px;
+    }
+    @media #{$mobile} {
+      padding: 30px 60px 40px 19px;
+    }
+    img {
+      left: auto;
+      right: 60px;
+      @media #{$tablet} {
+        left: auto;
+        right: 25px;
+      }
+      @media #{$betweentabdesk} {
+        left: auto;
+        right: 35px;
+      }
+      @media #{$mobile} {
+        left: auto;
+        right: 20px;
+      }
+    }
+    p {
+      .read-more {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+/* End Facts */
