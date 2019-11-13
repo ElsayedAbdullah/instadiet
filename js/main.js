@@ -330,3 +330,23 @@ $(function() {
 //       .fadeOut(1000);
 //   });
 // });
+
+// trigger owl carousel two
+$("#blogSlider").owlCarousel({
+  loop: true,
+  nav: true,
+  margin: 30,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1.5
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+  },
+  navText: ["<div class='left-arrow'></div>", "<div class='right-arrow'></div>"]
+});

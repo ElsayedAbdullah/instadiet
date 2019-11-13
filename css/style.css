@@ -4326,4 +4326,428 @@ section {
 }
 
 /* End order success */
+/* Start Diet Page */
+/* Start Hero-image */
+.hero-image {
+  background: url(../imgs/diet-type.png);
+  height: 385px;
+  position: relative;
+}
+
+.hero-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #9d9eae;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+.hero-image .diet-type {
+  background: #656678;
+  -webkit-box-shadow: 0px 20px 71px rgba(128, 129, 145, 0.2);
+          box-shadow: 0px 20px 71px rgba(128, 129, 145, 0.2);
+  border-radius: 8px;
+  position: absolute;
+  top: 177px;
+  z-index: 5;
+}
+
+/* End Hero-image */
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  text-align: center;
+  color: #2a338f;
+}
+
+/* Start Diet Description */
+.diet-description .diet-desc-content {
+  width: 770px;
+  margin: auto;
+  padding-top: 330px;
+  padding-bottom: 150px;
+}
+
+.diet-description .diet-desc-content .diet-title {
+  margin-bottom: 47px;
+}
+
+.diet-description .diet-desc-content .diet-txt {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 35px;
+  color: #595a6e;
+}
+
+/* End Diet Description */
+/* Start Diet-Best-For */
+.diet-best-for {
+  position: relative;
+  overflow: visible;
+  z-index: 4;
+  background: linear-gradient(138.68deg, #f5f5fa -18.16%, rgba(245, 245, 250, 0) 90.84%);
+}
+
+.diet-best-for .diet-best-for-content {
+  width: 960px;
+  margin: auto;
+  padding-top: 86px;
+  padding-bottom: 130px;
+  padding-left: 110px;
+}
+
+.diet-best-for .diet-best-for-content .col-md-4 {
+  padding: 0;
+}
+
+.diet-best-for .diet-best-for-content h2 {
+  margin-bottom: 55px;
+}
+
+.diet-best-for .diet-best-for-content .diet-best-for-list li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 28px;
+  color: #656678;
+}
+
+.diet-best-for .diet-best-for-content .diet-best-for-list li i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ef5fa2;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* End Diet-Best-For */
+/* Start advantages */
+.advantages .container {
+  position: relative;
+}
+
+.advantages .container:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(177.44deg, #F5F5FA -26.85%, rgba(245, 245, 250, 0) 70.98%);
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  width: 335px;
+  height: 2640px;
+  top: -670px;
+  left: 50%;
+  z-index: 1;
+}
+
+.advantages .container:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(178.85deg, #F5F5FA -26.85%, rgba(245, 245, 250, 0) 70.98%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 530px;
+  height: 1887px;
+  top: -300px;
+  left: 885px;
+  z-index: 1;
+}
+
+.advantages, .challenges {
+  position: relative;
+  overflow: visible;
+  z-index: 3;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.advantages .advantages-content,
+.advantages .challenges-content, .challenges .advantages-content,
+.challenges .challenges-content {
+  width: 770px;
+  margin: auto;
+}
+
+.advantages .advantages-content h2,
+.advantages .challenges-content h2, .challenges .advantages-content h2,
+.challenges .challenges-content h2 {
+  margin-bottom: 47px;
+}
+
+.advantages .advantages-content .challenges-txt,
+.advantages .advantages-content .advantages-txt,
+.advantages .challenges-content .challenges-txt,
+.advantages .challenges-content .advantages-txt, .challenges .advantages-content .challenges-txt,
+.challenges .advantages-content .advantages-txt,
+.challenges .challenges-content .challenges-txt,
+.challenges .challenges-content .advantages-txt {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 54px;
+  color: #595a6e;
+}
+
+.advantages .advantages-content .advantages-list li,
+.advantages .advantages-content .challenges-list li,
+.advantages .challenges-content .advantages-list li,
+.advantages .challenges-content .challenges-list li, .challenges .advantages-content .advantages-list li,
+.challenges .advantages-content .challenges-list li,
+.challenges .challenges-content .advantages-list li,
+.challenges .challenges-content .challenges-list li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #0c0e2a;
+}
+
+.advantages .advantages-content .advantages-list li span,
+.advantages .advantages-content .challenges-list li span,
+.advantages .challenges-content .advantages-list li span,
+.advantages .challenges-content .challenges-list li span, .challenges .advantages-content .advantages-list li span,
+.challenges .advantages-content .challenges-list li span,
+.challenges .challenges-content .advantages-list li span,
+.challenges .challenges-content .challenges-list li span {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ef5fa2;
+}
+
+.advantages .advantages-content .advantages-list li p,
+.advantages .advantages-content .challenges-list li p,
+.advantages .challenges-content .advantages-list li p,
+.advantages .challenges-content .challenges-list li p, .challenges .advantages-content .advantages-list li p,
+.challenges .advantages-content .challenges-list li p,
+.challenges .challenges-content .advantages-list li p,
+.challenges .challenges-content .challenges-list li p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 34px;
+  margin-top: 5px;
+  color: #595a6e;
+}
+
+.advantages .advantages-content .components p,
+.advantages .challenges-content .components p, .challenges .advantages-content .components p,
+.challenges .challenges-content .components p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #595A6E;
+}
+
+.advantages .advantages-content .components li,
+.advantages .challenges-content .components li, .challenges .advantages-content .components li,
+.challenges .challenges-content .components li {
+  position: relative;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #595A6E;
+}
+
+.advantages .advantages-content .components li:before,
+.advantages .challenges-content .components li:before, .challenges .advantages-content .components li:before,
+.challenges .challenges-content .components li:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 25px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0C0E2A;
+}
+
+.challenges {
+  background: linear-gradient(69.6deg, #F5F5FA -27.65%, rgba(245, 245, 250, 0) 75.61%);
+}
+
+/* End advantages */
+/* Start Latest From Blog */
+.latest-from-blog {
+  padding: 6.5625rem 0;
+}
+
+@media (max-width: 1366px) {
+  .latest-from-blog {
+    padding: 80px 0;
+  }
+}
+
+.latest-from-blog .latest-blog-txt {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #595A6E;
+  margin-bottom: 5px;
+}
+
+.latest-from-blog h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: #2a338f;
+}
+
+.latest-from-blog .slider {
+  position: relative;
+}
+
+.latest-from-blog .slider .item .blog-one-img {
+  background-image: url(../imgs/fresh-juice.png);
+}
+
+.latest-from-blog .slider .item .blog-two-img {
+  background-image: url(../imgs/strawberry.png);
+}
+
+.latest-from-blog .slider .item .blog-three-img {
+  background-image: url(../imgs/pinapple.png);
+}
+
+.latest-from-blog .slider .item > div {
+  width: 16.875rem;
+  height: 11.8125rem;
+  background-size: 115%;
+  background-position: center;
+  border: 1px solid #e4e5f0;
+  -webkit-box-shadow: 0rem 0.875rem 0.9375rem rgba(213, 215, 232, 0.3);
+          box-shadow: 0rem 0.875rem 0.9375rem rgba(213, 215, 232, 0.3);
+  border-radius: 0.5rem;
+}
+
+.latest-from-blog .slider .item p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #0c0e2a;
+  margin-top: 1.625rem;
+  width: 90%;
+}
+
+.latest-from-blog .slider .owl-theme .owl-nav [class*="owl-"] {
+  margin: 10px;
+}
+
+.latest-from-blog .slider .owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent;
+}
+
+.latest-from-blog .slider .owl-nav {
+  position: absolute;
+  top: 150px;
+  left: -300px;
+}
+
+.latest-from-blog .slider .owl-nav .owl-prev,
+.latest-from-blog .slider .owl-nav .owl-next {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+}
+
+.latest-from-blog .slider .owl-nav .owl-next:hover .right-arrow {
+  background-color: #ef5fa2;
+}
+
+.latest-from-blog .slider .owl-nav .owl-next:hover .right-arrow:before, .latest-from-blog .slider .owl-nav .owl-next:hover .right-arrow:after {
+  background-color: #ef5fa2;
+}
+
+.latest-from-blog .slider .owl-nav .owl-next:hover .right-arrow:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.latest-from-blog .slider .owl-nav .owl-next:hover .right-arrow:after {
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.latest-from-blog .slider .owl-nav .owl-prev:hover .left-arrow {
+  background-color: #ef5fa2;
+}
+
+.latest-from-blog .slider .owl-nav .owl-prev:hover .left-arrow:before, .latest-from-blog .slider .owl-nav .owl-prev:hover .left-arrow:after {
+  background-color: #ef5fa2;
+}
+
+.latest-from-blog .slider .owl-nav .owl-prev:hover .left-arrow:before {
+  bottom: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.latest-from-blog .slider .owl-nav .owl-prev:hover .left-arrow:after {
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.latest-from-blog .slider .owl-nav .left-arrow,
+.latest-from-blog .slider .owl-nav .right-arrow {
+  width: 20px;
+  height: 2px;
+  background-color: #c0c0c0;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.latest-from-blog .slider .owl-nav .left-arrow:before, .latest-from-blog .slider .owl-nav .left-arrow:after,
+.latest-from-blog .slider .owl-nav .right-arrow:before,
+.latest-from-blog .slider .owl-nav .right-arrow:after {
+  content: "";
+  background: #c0c0c0;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.latest-from-blog .slider .owl-nav .left-arrow:before,
+.latest-from-blog .slider .owl-nav .right-arrow:before {
+  left: -3px;
+  bottom: -3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.latest-from-blog .slider .owl-nav .left-arrow:after,
+.latest-from-blog .slider .owl-nav .right-arrow:after {
+  left: -3px;
+  top: -3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.latest-from-blog .slider .owl-nav .right-arrow:before {
+  left: 13px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.latest-from-blog .slider .owl-nav .right-arrow:after {
+  left: 13px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* End Latest From Blog */
+.footer-diet-type {
+  padding-top: 80px;
+}
 /*# sourceMappingURL=style.css.map */
