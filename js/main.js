@@ -339,12 +339,15 @@ $("#blogSlider").owlCarousel({
   dots: false,
   responsive: {
     0: {
-      items: 1.5
+      items: 1.3
     },
     600: {
-      items: 2
+      items: 2.4
     },
     1000: {
+      items: 2.5
+    },
+    1200: {
       items: 3
     }
   },

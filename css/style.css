@@ -4347,13 +4347,30 @@ section {
 }
 
 .hero-image .diet-type {
-  background: #656678;
+  background-image: url(../imgs/vegetrian-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #656678;
   -webkit-box-shadow: 0px 20px 71px rgba(128, 129, 145, 0.2);
           box-shadow: 0px 20px 71px rgba(128, 129, 145, 0.2);
   border-radius: 8px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 416px;
   top: 177px;
   z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .hero-image .diet-type {
+    background-image: url(../imgs/vegetrian-img.png);
+    height: 315px;
+    background-position-x: 47%;
+    left: 50%;
+    top: 140px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 /* End Hero-image */
@@ -4365,6 +4382,18 @@ section {
   color: #2a338f;
 }
 
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
 /* Start Diet Description */
 .diet-description .diet-desc-content {
   width: 770px;
@@ -4373,8 +4402,24 @@ section {
   padding-bottom: 150px;
 }
 
+@media (max-width: 992px) {
+  .diet-description .diet-desc-content {
+    padding-top: 110px;
+    padding-bottom: 25px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
 .diet-description .diet-desc-content .diet-title {
   margin-bottom: 47px;
+}
+
+@media (max-width: 767px) {
+  .diet-description .diet-desc-content .diet-title {
+    margin-bottom: 15px;
+  }
 }
 
 .diet-description .diet-desc-content .diet-txt {
@@ -4382,6 +4427,14 @@ section {
   line-height: 28px;
   margin-bottom: 35px;
   color: #595a6e;
+}
+
+@media (max-width: 767px) {
+  .diet-description .diet-desc-content .diet-txt {
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
 }
 
 /* End Diet Description */
@@ -4401,6 +4454,16 @@ section {
   padding-left: 110px;
 }
 
+@media (max-width: 992px) {
+  .diet-best-for .diet-best-for-content {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+}
+
 .diet-best-for .diet-best-for-content .col-md-4 {
   padding: 0;
 }
@@ -4409,14 +4472,38 @@ section {
   margin-bottom: 55px;
 }
 
+@media (max-width: 767px) {
+  .diet-best-for .diet-best-for-content h2 {
+    margin-bottom: 35px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .diet-best-for .diet-best-for-content .diet-best-for-list {
+    padding-left: 16px;
+  }
+}
+
 .diet-best-for .diet-best-for-content .diet-best-for-list li {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 28px;
   color: #656678;
+  position: relative;
+  padding-left: 40px;
+}
+
+@media (max-width: 767px) {
+  .diet-best-for .diet-best-for-content .diet-best-for-list li {
+    margin-bottom: 22px;
+  }
 }
 
 .diet-best-for .diet-best-for-content .diet-best-for-list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -4424,7 +4511,6 @@ section {
   line-height: 32px;
   color: #fff;
   text-align: center;
-  margin-right: 6px;
   font-size: 14px;
 }
 
@@ -4434,23 +4520,29 @@ section {
   position: relative;
 }
 
-.advantages .container:after {
-  content: "";
-  position: absolute;
-  background: linear-gradient(177.44deg, #F5F5FA -26.85%, rgba(245, 245, 250, 0) 70.98%);
-  -webkit-transform: rotate(45deg) translateX(-50%);
-          transform: rotate(45deg) translateX(-50%);
-  width: 335px;
-  height: 2640px;
-  top: -670px;
-  left: 50%;
-  z-index: 1;
+@media (max-width: 767px) {
+  .advantages .container:before, .advantages .container:after {
+    display: none;
+  }
 }
 
 .advantages .container:before {
   content: "";
   position: absolute;
-  background: linear-gradient(178.85deg, #F5F5FA -26.85%, rgba(245, 245, 250, 0) 70.98%);
+  background: linear-gradient(177.44deg, #f5f5fa -26.85%, rgba(245, 245, 250, 0) 70.98%);
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  width: 335px;
+  height: 2640px;
+  top: -920px;
+  left: 851px;
+  z-index: 1;
+}
+
+.advantages .container:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(178.85deg, #f5f5fa -26.85%, rgba(245, 245, 250, 0) 70.98%);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   width: 530px;
@@ -4460,7 +4552,8 @@ section {
   z-index: 1;
 }
 
-.advantages, .challenges {
+.advantages,
+.challenges {
   position: relative;
   overflow: visible;
   z-index: 3;
@@ -4468,23 +4561,57 @@ section {
   padding-bottom: 112px;
 }
 
+@media (max-width: 992px) {
+  .advantages,
+  .challenges {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
 .advantages .advantages-content,
-.advantages .challenges-content, .challenges .advantages-content,
+.advantages .challenges-content,
+.challenges .advantages-content,
 .challenges .challenges-content {
   width: 770px;
   margin: auto;
 }
 
+@media (max-width: 992px) {
+  .advantages .advantages-content,
+  .advantages .challenges-content,
+  .challenges .advantages-content,
+  .challenges .challenges-content {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
 .advantages .advantages-content h2,
-.advantages .challenges-content h2, .challenges .advantages-content h2,
+.advantages .challenges-content h2,
+.challenges .advantages-content h2,
 .challenges .challenges-content h2 {
   margin-bottom: 47px;
+}
+
+@media (max-width: 767px) {
+  .advantages .advantages-content h2,
+  .advantages .challenges-content h2,
+  .challenges .advantages-content h2,
+  .challenges .challenges-content h2 {
+    margin-bottom: 15px;
+  }
 }
 
 .advantages .advantages-content .challenges-txt,
 .advantages .advantages-content .advantages-txt,
 .advantages .challenges-content .challenges-txt,
-.advantages .challenges-content .advantages-txt, .challenges .advantages-content .challenges-txt,
+.advantages .challenges-content .advantages-txt,
+.challenges .advantages-content .challenges-txt,
 .challenges .advantages-content .advantages-txt,
 .challenges .challenges-content .challenges-txt,
 .challenges .challenges-content .advantages-txt {
@@ -4494,10 +4621,26 @@ section {
   color: #595a6e;
 }
 
+@media (max-width: 767px) {
+  .advantages .advantages-content .challenges-txt,
+  .advantages .advantages-content .advantages-txt,
+  .advantages .challenges-content .challenges-txt,
+  .advantages .challenges-content .advantages-txt,
+  .challenges .advantages-content .challenges-txt,
+  .challenges .advantages-content .advantages-txt,
+  .challenges .challenges-content .challenges-txt,
+  .challenges .challenges-content .advantages-txt {
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
+
 .advantages .advantages-content .advantages-list li,
 .advantages .advantages-content .challenges-list li,
 .advantages .challenges-content .advantages-list li,
-.advantages .challenges-content .challenges-list li, .challenges .advantages-content .advantages-list li,
+.advantages .challenges-content .challenges-list li,
+.challenges .advantages-content .advantages-list li,
 .challenges .advantages-content .challenges-list li,
 .challenges .challenges-content .advantages-list li,
 .challenges .challenges-content .challenges-list li {
@@ -4510,7 +4653,8 @@ section {
 .advantages .advantages-content .advantages-list li span,
 .advantages .advantages-content .challenges-list li span,
 .advantages .challenges-content .advantages-list li span,
-.advantages .challenges-content .challenges-list li span, .challenges .advantages-content .advantages-list li span,
+.advantages .challenges-content .challenges-list li span,
+.challenges .advantages-content .advantages-list li span,
 .challenges .advantages-content .challenges-list li span,
 .challenges .challenges-content .advantages-list li span,
 .challenges .challenges-content .challenges-list li span {
@@ -4522,7 +4666,8 @@ section {
 .advantages .advantages-content .advantages-list li p,
 .advantages .advantages-content .challenges-list li p,
 .advantages .challenges-content .advantages-list li p,
-.advantages .challenges-content .challenges-list li p, .challenges .advantages-content .advantages-list li p,
+.advantages .challenges-content .challenges-list li p,
+.challenges .advantages-content .advantages-list li p,
 .challenges .advantages-content .challenges-list li p,
 .challenges .challenges-content .advantages-list li p,
 .challenges .challenges-content .challenges-list li p {
@@ -4533,26 +4678,44 @@ section {
   color: #595a6e;
 }
 
+@media (max-width: 767px) {
+  .advantages .advantages-content .advantages-list li p,
+  .advantages .advantages-content .challenges-list li p,
+  .advantages .challenges-content .advantages-list li p,
+  .advantages .challenges-content .challenges-list li p,
+  .challenges .advantages-content .advantages-list li p,
+  .challenges .advantages-content .challenges-list li p,
+  .challenges .challenges-content .advantages-list li p,
+  .challenges .challenges-content .challenges-list li p {
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
+
 .advantages .advantages-content .components p,
-.advantages .challenges-content .components p, .challenges .advantages-content .components p,
+.advantages .challenges-content .components p,
+.challenges .advantages-content .components p,
 .challenges .challenges-content .components p {
   font-size: 16px;
   line-height: 28px;
-  color: #595A6E;
+  color: #595a6e;
 }
 
 .advantages .advantages-content .components li,
-.advantages .challenges-content .components li, .challenges .advantages-content .components li,
+.advantages .challenges-content .components li,
+.challenges .advantages-content .components li,
 .challenges .challenges-content .components li {
   position: relative;
   padding-left: 50px;
   font-size: 16px;
   line-height: 28px;
-  color: #595A6E;
+  color: #595a6e;
 }
 
 .advantages .advantages-content .components li:before,
-.advantages .challenges-content .components li:before, .challenges .advantages-content .components li:before,
+.advantages .challenges-content .components li:before,
+.challenges .advantages-content .components li:before,
 .challenges .challenges-content .components li:before {
   content: "";
   position: absolute;
@@ -4563,11 +4726,11 @@ section {
   left: 25px;
   height: 8px;
   border-radius: 50%;
-  background-color: #0C0E2A;
+  background-color: #0c0e2a;
 }
 
 .challenges {
-  background: linear-gradient(69.6deg, #F5F5FA -27.65%, rgba(245, 245, 250, 0) 75.61%);
+  background: linear-gradient(69.6deg, #f5f5fa -27.65%, rgba(245, 245, 250, 0) 75.61%);
 }
 
 /* End advantages */
@@ -4576,9 +4739,15 @@ section {
   padding: 6.5625rem 0;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 992px) {
   .latest-from-blog {
-    padding: 80px 0;
+    padding: 50px 0;
+  }
+  .latest-from-blog .container {
+    padding-right: 0;
+  }
+  .latest-from-blog h2 {
+    margin-bottom: 30px;
   }
 }
 
@@ -4587,19 +4756,26 @@ section {
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #595A6E;
+  color: #595a6e;
   margin-bottom: 5px;
 }
 
 .latest-from-blog h2 {
-  font-weight: 600;
-  font-size: 2.25rem;
-  line-height: 3rem;
-  color: #2a338f;
+  text-align: left;
 }
 
 .latest-from-blog .slider {
   position: relative;
+}
+
+@media (max-width: 992px) {
+  .latest-from-blog .slider {
+    height: 270px;
+  }
+  .latest-from-blog .slider .owl-carousel {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .latest-from-blog .slider .item .blog-one-img {
@@ -4631,6 +4807,7 @@ section {
   color: #0c0e2a;
   margin-top: 1.625rem;
   width: 90%;
+  font-weight: 400;
 }
 
 .latest-from-blog .slider .owl-theme .owl-nav [class*="owl-"] {
@@ -4645,6 +4822,12 @@ section {
   position: absolute;
   top: 150px;
   left: -300px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .latest-from-blog .slider .owl-nav {
+    left: -240px;
+  }
 }
 
 .latest-from-blog .slider .owl-nav .owl-prev,
