@@ -19,6 +19,9 @@
   <!-- fontAwesome -->
   <link rel="stylesheet"
     href="css/font-awesome.min.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <!-- custom style css -->
   <link rel="stylesheet"
     href="css/style.css" />
@@ -252,8 +255,42 @@
 
     <!-- End single post editor -->
 
+    <!-- Start Latest From Blog -->
+    <section class="latest-from-blog single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2 class="section-title">Latest from the blog</h2>
+          </div>
+          <div class="col-md-9">
+            <div class="slider">
+              <div class="owl-carousel owl-theme" id="blogSlider-single">
+                <div class="item">
+                  <div class="blog-one-img"></div>
+                  <p>Phasellus in felis congue, fringilla nisl id, facilisis ligula.</p>
+                </div>
+                <div class="item">
+                  <div class="blog-two-img"></div>
+                  <p>Phasellus in felis congue, fringilla nisl id, facilisis ligula.</p>
+                </div>
+                <div class="item">
+                  <div class="blog-three-img"></div>
+                  <p>Phasellus in felis congue, fringilla nisl id, facilisis ligula.</p>
+                </div>
+                <div class="item">
+                  <div class="blog-two-img"></div>
+                  <p>Phasellus in felis congue, fringilla nisl id, facilisis ligula.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Latest From Blog -->
+
     <!-- Start Related Posts -->
-    <section class="related-posts last-section">
+    <!-- <section class="related-posts last-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -299,7 +336,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Related Posts -->
 
 
@@ -397,6 +434,8 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
   <!-- custom main js -->
   <script src="js/main.js"></script>
 </body>
