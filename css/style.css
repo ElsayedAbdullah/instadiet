@@ -4412,7 +4412,6 @@ section {
   .section-title {
     font-size: 24px;
     line-height: 32px;
-    text-align: left;
   }
 }
 
@@ -4502,7 +4501,6 @@ section {
 @media (max-width: 767px) {
   .diet-best-for .diet-best-for-content h2 {
     margin-bottom: 35px;
-    width: 70%;
     margin-left: 0;
   }
 }

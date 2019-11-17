@@ -835,12 +835,6 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 /* End Facts */
-@media (max-width: 767px) {
-  .section-title {
-    text-align: right;
-  }
-}
-
 /* Start Diet-Best-For */
 .diet-best-for .diet-best-for-content {
   padding-left: 0;

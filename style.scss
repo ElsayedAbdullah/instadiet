@@ -3948,7 +3948,6 @@ section {
   @media #{$mobile} {
     font-size: 24px;
     line-height: 32px;
-    text-align: left;
   }
 }
 
@@ -4023,7 +4022,6 @@ section {
       margin-left: -110px;
       @media #{$mobile} {
         margin-bottom: 35px;
-        width: 70%;
         margin-left: 0;
       }
     }
