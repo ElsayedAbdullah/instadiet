@@ -4003,7 +4003,7 @@ section {
   );
 
   .diet-best-for-content {
-    width: 960px;
+    width: 990px;
     margin: auto;
     padding-top: 86px;
     padding-bottom: 130px;
@@ -4024,13 +4024,11 @@ section {
       @media #{$mobile} {
         margin-bottom: 35px;
         width: 70%;
+        margin-left: 0;
       }
     }
     .diet-best-for-list {
-      @media #{$mobile} {
-        padding-left: 16px;
-      }
-      li {
+      p {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 28px;
@@ -4042,7 +4040,7 @@ section {
         }
         i {
           position: absolute;
-          top: 0;
+          top: -5px;
           left: 0;
           width: 32px;
           height: 32px;
@@ -4265,7 +4263,7 @@ section {
         border-radius: rem(8px);
       }
 
-      p {
+      a {
         font-size: rem(14px);
         line-height: rem(24px);
         color: #0c0e2a;
@@ -4273,6 +4271,11 @@ section {
         width: 90%;
         font-weight: 400;
         margin-bottom: 0;
+        display: block;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: $primaryColor;
+        }
       }
     }
 

@@ -4473,7 +4473,7 @@ section {
 }
 
 .diet-best-for .diet-best-for-content {
-  width: 960px;
+  width: 990px;
   margin: auto;
   padding-top: 86px;
   padding-bottom: 130px;
@@ -4503,16 +4503,11 @@ section {
   .diet-best-for .diet-best-for-content h2 {
     margin-bottom: 35px;
     width: 70%;
+    margin-left: 0;
   }
 }
 
-@media (max-width: 767px) {
-  .diet-best-for .diet-best-for-content .diet-best-for-list {
-    padding-left: 16px;
-  }
-}
-
-.diet-best-for .diet-best-for-content .diet-best-for-list li {
+.diet-best-for .diet-best-for-content .diet-best-for-list p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 28px;
@@ -4522,14 +4517,14 @@ section {
 }
 
 @media (max-width: 767px) {
-  .diet-best-for .diet-best-for-content .diet-best-for-list li {
+  .diet-best-for .diet-best-for-content .diet-best-for-list p {
     margin-bottom: 22px;
   }
 }
 
-.diet-best-for .diet-best-for-content .diet-best-for-list li i {
+.diet-best-for .diet-best-for-content .diet-best-for-list p i {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 32px;
   height: 32px;
@@ -4828,7 +4823,7 @@ section {
   border-radius: 0.5rem;
 }
 
-.latest-from-blog .slider .item p {
+.latest-from-blog .slider .item a {
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: #0c0e2a;
@@ -4836,6 +4831,13 @@ section {
   width: 90%;
   font-weight: 400;
   margin-bottom: 0;
+  display: block;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.latest-from-blog .slider .item a:hover {
+  color: #ef5fa2;
 }
 
 .latest-from-blog .slider .owl-theme .owl-nav [class*="owl-"] {

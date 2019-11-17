@@ -895,6 +895,12 @@ header {
 
 //////////////////////
 // start diet type page
+
+.section-title {
+  @media #{$mobile} {
+    text-align: right;
+  }
+}
 /* Start Diet-Best-For */
 .diet-best-for {
   .diet-best-for-content {
@@ -907,14 +913,13 @@ header {
     h2 {
       margin-right: -110px;
       margin-left: 0;
+      @media #{$maxTab} {
+        margin-right: 0;
+      }
     }
 
     .diet-best-for-list {
-      @media #{$mobile} {
-        padding-left: 0;
-        padding-right: 16px;
-      }
-      li {
+      p {
         padding-left: 0;
         padding-right: 40px;
         i {

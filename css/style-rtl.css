@@ -835,6 +835,12 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 /* End Facts */
+@media (max-width: 767px) {
+  .section-title {
+    text-align: right;
+  }
+}
+
 /* Start Diet-Best-For */
 .diet-best-for .diet-best-for-content {
   padding-left: 0;
@@ -853,19 +859,18 @@ header .navbar-light .navbar-nav .nav-link:hover {
   margin-left: 0;
 }
 
-@media (max-width: 767px) {
-  .diet-best-for .diet-best-for-content .diet-best-for-list {
-    padding-left: 0;
-    padding-right: 16px;
+@media (max-width: 992px) {
+  .diet-best-for .diet-best-for-content h2 {
+    margin-right: 0;
   }
 }
 
-.diet-best-for .diet-best-for-content .diet-best-for-list li {
+.diet-best-for .diet-best-for-content .diet-best-for-list p {
   padding-left: 0;
   padding-right: 40px;
 }
 
-.diet-best-for .diet-best-for-content .diet-best-for-list li i {
+.diet-best-for .diet-best-for-content .diet-best-for-list p i {
   left: auto;
   right: 0;
 }
