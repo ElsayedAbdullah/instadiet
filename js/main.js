@@ -413,3 +413,26 @@ $("#blogSlider-single").owlCarousel({
   },
   navText: ["<div class='left-arrow'></div>", "<div class='right-arrow'></div>"]
 });
+
+$("#blogSlider-single-arabic").owlCarousel({
+  loop: true,
+  rtl: true,
+  nav: true,
+  margin: 30,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1.3
+    },
+    600: {
+      items: 2.4
+    },
+    1000: {
+      items: 2.5
+    },
+    1200: {
+      items: 3
+    }
+  },
+  navText: ["<div class='right-arrow'></div>", "<div class='left-arrow'></div>"]
+});
