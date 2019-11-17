@@ -892,3 +892,126 @@ header {
   }
 }
 /* End Facts */
+
+//////////////////////
+// start diet type page
+/* Start Diet-Best-For */
+.diet-best-for {
+  .diet-best-for-content {
+    padding-left: 0;
+    padding-right: 110px;
+    @media #{$maxTab} {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    h2 {
+      margin-right: -110px;
+      margin-left: 0;
+    }
+
+    .diet-best-for-list {
+      @media #{$mobile} {
+        padding-left: 0;
+        padding-right: 16px;
+      }
+      li {
+        padding-left: 0;
+        padding-right: 40px;
+        i {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+/* End Diet-Best-For */
+
+/* Start advantages */
+.advantages,
+.challenges {
+  .advantages-content,
+  .challenges-content {
+    .components {
+      li {
+        padding-left: 0;
+        padding-right: 50px;
+        &:before {
+          left: 0;
+          right: 25px;
+        }
+      }
+    }
+  }
+}
+
+/* End advantages */
+
+/* Start Latest From Blog */
+.latest-from-blog {
+  @media #{$maxTab} {
+    .container {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+  h2 {
+    text-align: right;
+  }
+  .slider {
+    .owl-nav {
+      left: auto;
+      right: -300px;
+      @media #{$betweentabdesk} {
+        left: auto;
+        right: -240px;
+      }
+      .owl-prev {
+        &:hover {
+          .right-arrow {
+            background-color: $primaryColor;
+
+            &:before,
+            &:after {
+              background-color: $primaryColor;
+            }
+
+            &:before {
+              bottom: 3px;
+              transform: rotate(45deg);
+            }
+
+            &:after {
+              top: 3px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+      .owl-next {
+        &:hover {
+          .left-arrow {
+            background-color: $primaryColor;
+
+            &:before,
+            &:after {
+              background-color: $primaryColor;
+            }
+
+            &:before {
+              bottom: 3px;
+              transform: rotate(-45deg);
+            }
+
+            &:after {
+              top: 3px;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Latest From Blog */
