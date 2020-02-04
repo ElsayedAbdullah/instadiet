@@ -432,7 +432,8 @@ header {
   &:after {
     content: "";
     position: absolute;
-    background: url(../imgs/instadiet-bg.jpg) center center no-repeat/cover;
+    background: url(../imgs/instadiet-bg.jpg) center center no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100%;
